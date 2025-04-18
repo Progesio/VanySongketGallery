@@ -25,6 +25,18 @@
       mix-blend-mode: multiply;
       pointer-events: none;
     }
+    .whatsapp-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 1000;
+    }
+    .whatsapp-button img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
   </style>
 </head>
 <body>
@@ -81,6 +93,10 @@
       <img id="user-photo" style="display:none;" alt="User Upload" />
     </div>
   </div>
+
+  <a href="https://api.whatsapp.com/send/?phone=6281316898922&text&type=phone_number&app_absent=0" target="_blank" class="whatsapp-button">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+  </a>
 
   <script>
     const motifSelect = document.getElementById('motif-select');

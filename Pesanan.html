@@ -13,11 +13,44 @@
       box-shadow: 0 2px 5px rgba(0,0,0,0.2);
       cursor: pointer;
     }
+    .whatsapp-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 1000;
+    }
+    .whatsapp-button img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
   </style>
 </head>
 <body class="bg-light py-5">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Vany Songket Gallery</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="About.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="Prestasi.html">Prestasi</a></li>
+          <li class="nav-item"><a class="nav-link" href="Pesanan.html">Pesanan</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-  <div class="container">
+  <header class="text-white text-center py-5 mb-2" style="background: linear-gradient(45deg, #6a11cb, #2575fc);">
+    <h1 class="display-4">Pesanan</h1>
+    <p class="lead">Kalkulator ukuran dan gambar kain untuk kebutuhan Anda</p>
+  </header>
+
+  <div class="container vh-100">
     <div class="card shadow-lg p-4 rounded-4">
       <h2 class="mb-4 text-center">Kalkulator Ukuran & Gambar Kain</h2>
 
@@ -152,6 +185,15 @@
       modal.show();
     }
   </script>
+
+  <a href="https://api.whatsapp.com/send/?phone=6281316898922&text&type=phone_number&app_absent=0" target="_blank" class="whatsapp-button">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+  </a>
+
+  <footer class="bg-dark text-white text-center py-4">
+    <p>&copy; 2023 Vany Songket Gallery. All Rights Reserved.</p>
+    <p>Follow us on <a href="#" class="text-white text-decoration-none">Instagram</a> | <a href="#" class="text-white text-decoration-none">Facebook</a></p>
+  </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
